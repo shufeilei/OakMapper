@@ -18,7 +18,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="View" image="view_tab_button.png" id="cc7-Tp-KZe"/>
+                    <tabBarItem key="tabBarItem" title="View" image="view_tab_icon.png" id="cc7-Tp-KZe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FhO-3L-162" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +47,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" id="nG5-cc-LSP">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="nG5-cc-LSP">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </mapView>
@@ -311,7 +311,7 @@
         <scene sceneID="Ob9-z2-dWh">
             <objects>
                 <navigationController id="Wdz-0k-yua" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Submit" image="submit_tab_up.png" id="QCy-g3-rdE"/>
+                    <tabBarItem key="tabBarItem" title="Submit" image="submit_tab_icon.png" id="QCy-g3-rdE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4lw-kb-Qhf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -331,8 +331,8 @@
         <image name="Location-Large.png" width="40" height="40"/>
         <image name="home_banner.png" width="320" height="119"/>
         <image name="home_tab_button.png" width="30" height="30"/>
-        <image name="submit_tab_up.png" width="26" height="26"/>
-        <image name="view_tab_button.png" width="32" height="32"/>
+        <image name="submit_tab_icon.png" width="24" height="17"/>
+        <image name="view_tab_icon.png" width="26" height="21"/>
     </resources>
     <classes>
         <class className="OakMapperHomeViewController" superclassName="UIViewController">
