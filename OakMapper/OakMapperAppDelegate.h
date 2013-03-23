@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 UCB. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface OakMapperAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

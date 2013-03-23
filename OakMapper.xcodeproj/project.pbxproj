@@ -18,6 +18,21 @@
 		7006212E16FBD18C00E62E16 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7006212D16FBD18C00E62E16 /* Default@2x.png */; };
 		7006213016FBD18C00E62E16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7006212F16FBD18C00E62E16 /* Default-568h@2x.png */; };
 		7006213316FBD18C00E62E16 /* OakMapper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7006213116FBD18C00E62E16 /* OakMapper.xcdatamodeld */; };
+		7006213A16FBD41B00E62E16 /* OakMapperStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7006213916FBD41B00E62E16 /* OakMapperStoryboard.storyboard */; };
+		7006213C16FBDA8700E62E16 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7006213B16FBDA8700E62E16 /* MapKit.framework */; };
+		7006213E16FBDA8E00E62E16 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7006213D16FBDA8E00E62E16 /* CoreLocation.framework */; };
+		7006214016FBDAA500E62E16 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7006213F16FBDAA500E62E16 /* CFNetwork.framework */; };
+		7006214816FBDB3E00E62E16 /* home_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 7006214116FBDB3E00E62E16 /* home_banner.png */; };
+		7006214B16FBDB3E00E62E16 /* view_tab_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7006214416FBDB3E00E62E16 /* view_tab_button.png */; };
+		7006214D16FBDB3E00E62E16 /* orange-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7006214616FBDB3E00E62E16 /* orange-circle.png */; };
+		7006214E16FBDB3E00E62E16 /* red-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7006214716FBDB3E00E62E16 /* red-circle.png */; };
+		7006215016FBDD3E00E62E16 /* acorn_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7006214F16FBDD3E00E62E16 /* acorn_icon.png */; };
+		703FE95516FC350300E4C688 /* OakMapperHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703FE95416FC350300E4C688 /* OakMapperHomeViewController.m */; };
+		70CF4A5E16FCCBF400F9D292 /* submit_tab_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CF4A5D16FCCBF400F9D292 /* submit_tab_up.png */; };
+		70CF4A6216FCCEC100F9D292 /* home_tab_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CF4A6116FCCEC100F9D292 /* home_tab_button.png */; };
+		70CF4A6C16FCE7E400F9D292 /* bullseye.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CF4A6B16FCE7E300F9D292 /* bullseye.png */; };
+		70CF4A6E16FCE87600F9D292 /* Location-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CF4A6D16FCE87600F9D292 /* Location-Large.png */; };
+		70CF4A7116FCEB1300F9D292 /* OakMapperSubmitLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CF4A7016FCEB1300F9D292 /* OakMapperSubmitLocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +51,25 @@
 		7006212D16FBD18C00E62E16 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7006212F16FBD18C00E62E16 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7006213216FBD18C00E62E16 /* OakMapper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OakMapper.xcdatamodel; sourceTree = "<group>"; };
+		7006213916FBD41B00E62E16 /* OakMapperStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OakMapperStoryboard.storyboard; sourceTree = "<group>"; };
+		7006213B16FBDA8700E62E16 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7006213D16FBDA8E00E62E16 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7006213F16FBDAA500E62E16 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7006214116FBDB3E00E62E16 /* home_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_banner.png; sourceTree = "<group>"; };
+		7006214416FBDB3E00E62E16 /* view_tab_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view_tab_button.png; sourceTree = "<group>"; };
+		7006214616FBDB3E00E62E16 /* orange-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange-circle.png"; sourceTree = "<group>"; };
+		7006214716FBDB3E00E62E16 /* red-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-circle.png"; sourceTree = "<group>"; };
+		7006214F16FBDD3E00E62E16 /* acorn_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = acorn_icon.png; path = ../acorn_icon.png; sourceTree = "<group>"; };
+		703FE95316FC350200E4C688 /* OakMapperHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OakMapperHomeViewController.h; sourceTree = "<group>"; };
+		703FE95416FC350300E4C688 /* OakMapperHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OakMapperHomeViewController.m; sourceTree = "<group>"; };
+		70CF4A5D16FCCBF400F9D292 /* submit_tab_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit_tab_up.png; sourceTree = "<group>"; };
+		70CF4A6116FCCEC100F9D292 /* home_tab_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tab_button.png; sourceTree = "<group>"; };
+		70CF4A6316FCD4C200F9D292 /* OakMapperSOD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OakMapperSOD.h; sourceTree = "<group>"; };
+		70CF4A6416FCD4C200F9D292 /* OakMapperSOD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OakMapperSOD.m; sourceTree = "<group>"; };
+		70CF4A6B16FCE7E300F9D292 /* bullseye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullseye.png; sourceTree = "<group>"; };
+		70CF4A6D16FCE87600F9D292 /* Location-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Location-Large.png"; sourceTree = "<group>"; };
+		70CF4A6F16FCEB1300F9D292 /* OakMapperSubmitLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OakMapperSubmitLocationViewController.h; sourceTree = "<group>"; };
+		70CF4A7016FCEB1300F9D292 /* OakMapperSubmitLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OakMapperSubmitLocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7006214016FBDAA500E62E16 /* CFNetwork.framework in Frameworks */,
+				7006213E16FBDA8E00E62E16 /* CoreLocation.framework in Frameworks */,
+				7006213C16FBDA8700E62E16 /* MapKit.framework in Frameworks */,
 				7006211816FBD18C00E62E16 /* UIKit.framework in Frameworks */,
 				7006211A16FBD18C00E62E16 /* Foundation.framework in Frameworks */,
 				7006211C16FBD18C00E62E16 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +110,9 @@
 		7006211616FBD18C00E62E16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7006213F16FBDAA500E62E16 /* CFNetwork.framework */,
+				7006213D16FBDA8E00E62E16 /* CoreLocation.framework */,
+				7006213B16FBDA8700E62E16 /* MapKit.framework */,
 				7006211716FBD18C00E62E16 /* UIKit.framework */,
 				7006211916FBD18C00E62E16 /* Foundation.framework */,
 				7006211B16FBD18C00E62E16 /* CoreGraphics.framework */,
@@ -84,9 +124,16 @@
 		7006211F16FBD18C00E62E16 /* OakMapper */ = {
 			isa = PBXGroup;
 			children = (
+				70CF4A6316FCD4C200F9D292 /* OakMapperSOD.h */,
+				70CF4A6416FCD4C200F9D292 /* OakMapperSOD.m */,
 				7006212816FBD18C00E62E16 /* OakMapperAppDelegate.h */,
 				7006212916FBD18C00E62E16 /* OakMapperAppDelegate.m */,
+				703FE95316FC350200E4C688 /* OakMapperHomeViewController.h */,
+				703FE95416FC350300E4C688 /* OakMapperHomeViewController.m */,
 				7006213116FBD18C00E62E16 /* OakMapper.xcdatamodeld */,
+				7006213916FBD41B00E62E16 /* OakMapperStoryboard.storyboard */,
+				70CF4A6F16FCEB1300F9D292 /* OakMapperSubmitLocationViewController.h */,
+				70CF4A7016FCEB1300F9D292 /* OakMapperSubmitLocationViewController.m */,
 				7006212016FBD18C00E62E16 /* Supporting Files */,
 			);
 			path = OakMapper;
@@ -95,6 +142,15 @@
 		7006212016FBD18C00E62E16 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70CF4A6D16FCE87600F9D292 /* Location-Large.png */,
+				70CF4A6B16FCE7E300F9D292 /* bullseye.png */,
+				70CF4A6116FCCEC100F9D292 /* home_tab_button.png */,
+				70CF4A5D16FCCBF400F9D292 /* submit_tab_up.png */,
+				7006214F16FBDD3E00E62E16 /* acorn_icon.png */,
+				7006214116FBDB3E00E62E16 /* home_banner.png */,
+				7006214416FBDB3E00E62E16 /* view_tab_button.png */,
+				7006214616FBDB3E00E62E16 /* orange-circle.png */,
+				7006214716FBDB3E00E62E16 /* red-circle.png */,
 				7006212116FBD18C00E62E16 /* OakMapper-Info.plist */,
 				7006212216FBD18C00E62E16 /* InfoPlist.strings */,
 				7006212516FBD18C00E62E16 /* main.m */,
@@ -162,6 +218,16 @@
 				7006212C16FBD18C00E62E16 /* Default.png in Resources */,
 				7006212E16FBD18C00E62E16 /* Default@2x.png in Resources */,
 				7006213016FBD18C00E62E16 /* Default-568h@2x.png in Resources */,
+				7006213A16FBD41B00E62E16 /* OakMapperStoryboard.storyboard in Resources */,
+				7006214816FBDB3E00E62E16 /* home_banner.png in Resources */,
+				7006214B16FBDB3E00E62E16 /* view_tab_button.png in Resources */,
+				7006214D16FBDB3E00E62E16 /* orange-circle.png in Resources */,
+				7006214E16FBDB3E00E62E16 /* red-circle.png in Resources */,
+				7006215016FBDD3E00E62E16 /* acorn_icon.png in Resources */,
+				70CF4A5E16FCCBF400F9D292 /* submit_tab_up.png in Resources */,
+				70CF4A6216FCCEC100F9D292 /* home_tab_button.png in Resources */,
+				70CF4A6C16FCE7E400F9D292 /* bullseye.png in Resources */,
+				70CF4A6E16FCE87600F9D292 /* Location-Large.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +241,8 @@
 				7006212616FBD18C00E62E16 /* main.m in Sources */,
 				7006212A16FBD18C00E62E16 /* OakMapperAppDelegate.m in Sources */,
 				7006213316FBD18C00E62E16 /* OakMapper.xcdatamodeld in Sources */,
+				703FE95516FC350300E4C688 /* OakMapperHomeViewController.m in Sources */,
+				70CF4A7116FCEB1300F9D292 /* OakMapperSubmitLocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +323,7 @@
 				GCC_PREFIX_HEADER = "OakMapper/OakMapper-Prefix.pch";
 				INFOPLIST_FILE = "OakMapper/OakMapper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -266,6 +335,7 @@
 				GCC_PREFIX_HEADER = "OakMapper/OakMapper-Prefix.pch";
 				INFOPLIST_FILE = "OakMapper/OakMapper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -289,6 +359,7 @@
 				7006213816FBD18C00E62E16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
