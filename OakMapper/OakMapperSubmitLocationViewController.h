@@ -22,6 +22,6 @@
 - (IBAction)getLocation:(id)sender;
 
 - (void)stopUpdatingLocation:(NSString *)state;
-- (void)showMap;
+- (void)showMap:(float)latitude setLongitude:(float)longitude;
 
 @end

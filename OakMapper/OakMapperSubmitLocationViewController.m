@@ -7,6 +7,7 @@
 //
 
 #import "OakMapperSubmitLocationViewController.h"
+#import "MBProgressHUD.h"
 
 @interface OakMapperSubmitLocationViewController ()
 
@@ -16,7 +17,7 @@
 
 @implementation OakMapperSubmitLocationViewController
 
-@synthesize locationManager, bestEffortAtLocation, stateString;
+@synthesize bestEffortAtLocation, stateString;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,40 +47,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)showMap {
-    // 1
-    CLLocationCoordinate2D myLocation;
-    myLocation.latitude = bestEffortAtLocation.coordinate.latitude; // my location's latitude
-    myLocation.longitude= bestEffortAtLocation.coordinate.longitude; // my location's longitude
-    
-    // 2
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(myLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
-    
-    // 3
-    [self.mapView setRegion:viewRegion animated:YES];
-}
-
-
 #pragma mark IBAction methods
 - (IBAction)getLocation:(id)sender {
     // Create the manager object
     if ([CLLocationManager locationServicesEnabled]) {
-        if(locationManager==nil){
-            locationManager = [[CLLocationManager alloc] init];
-            locationManager.delegate = self;
-            locationManager.distanceFilter = 1000; // 1 kilometer
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        if(_locationManager==nil){
+            _locationManager = [[CLLocationManager alloc] init];
+            _locationManager.delegate = self;
+            _locationManager.distanceFilter = 1000; // 1 kilometer
+            _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         }
-        [locationManager startUpdatingLocation];
+        [_locationManager startUpdatingLocation];
 
-        /*
         // Add right after [request startAsynchronous] in refreshTapped action method
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        hud.labelText = @"Loading arrests...";
-        
-        // Add at start of setCompletionBlock and setFailedBlock blocks
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
-        */
+        hud.labelText = @"Getting location...";
         
         NSLog(@"Location has started to update...");
 
@@ -116,7 +98,7 @@
         // accuracy because it is a negative value. Instead, compare against some predetermined "real" measure of
         // acceptable accuracy, or depend on the timeout to stop updating. This sample depends on the timeout.
         //
-        if (newLocation.horizontalAccuracy <= locationManager.desiredAccuracy) {
+        if (newLocation.horizontalAccuracy <= _locationManager.desiredAccuracy) {
             // we have a measurement that meets our requirements, so we can stop updating the location
             //
             // IMPORTANT!!! Minimize power usage by stopping the location manager as soon as possible.
@@ -139,18 +121,23 @@
 
 - (void)stopUpdatingLocation:(NSString *)state {
     stateString = state;
-    [locationManager stopUpdatingLocation];
+    [_locationManager stopUpdatingLocation];
     NSLog(@"Core Location has stopped updating.");
 
-    locationManager.delegate = nil;
+    _locationManager.delegate = nil;
+
+    // Add at start of setCompletionBlock and setFailedBlock blocks
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    
 
     // Dispaly the latitude and longitude in the textfields
     [self.latTextfield setText:[NSString stringWithFormat:@"%f", bestEffortAtLocation.coordinate.latitude]];
     [self.lonTextfield setText:[NSString stringWithFormat:@"%f", bestEffortAtLocation.coordinate.longitude]];
     
     // Display location on the map
-    [self showMap];
+    [self showMap:bestEffortAtLocation.coordinate.latitude setLongitude:bestEffortAtLocation.coordinate.longitude];
 
+    
 }
 
 #pragma mark UITextField delegate
@@ -160,10 +147,56 @@
     }
     
     // if latTextfield and lonTextfield both have values, update Map
+    if (self.latTextfield.text != nil && self.lonTextfield != nil) {
+        [self showMap:[self.latTextfield.text floatValue] setLongitude:[self.lonTextfield.text floatValue]];
+        
+    }
     
     return YES;
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self animateTextField: textField up: YES];
+}
+
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [self animateTextField: textField up: NO];
+}
+
+- (void) animateTextField: (UITextField*) textField up: (BOOL) up
+{
+    const int movementDistance = 160; // tweak as needed
+    const float movementDuration = 0.3f; // tweak as needed
+    
+    int movement = (up ? -movementDistance : movementDistance);
+    
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+    [UIView commitAnimations];
+}
+
 #pragma mark MKMapKit delegate
+
+
+- (void)showMap:(float)latitude setLongitude:(float)longitude {
+    // Create my location
+    CLLocationCoordinate2D myLocation;
+    myLocation.latitude = latitude; // my location's latitude
+    myLocation.longitude = longitude; // my location's longitude
+    
+    // Create region with my location in the center
+    // Might need to change the radius of the region
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(myLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
+    
+    // Show the region on the map
+    [_mapView setRegion:viewRegion animated:YES];
+}
+
+
 
 @end
