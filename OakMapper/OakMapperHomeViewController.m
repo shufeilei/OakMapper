@@ -57,7 +57,7 @@
 
     
     // Switch to the SearchViewController
-    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:2];
+    self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:1];
 }
 
 

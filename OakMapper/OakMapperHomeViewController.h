@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 UCB. All rights reserved.
 //
 
-
-
 @interface OakMapperHomeViewController : UIViewController
 
 - (IBAction)searchLatestSubmissions:(id)sender;

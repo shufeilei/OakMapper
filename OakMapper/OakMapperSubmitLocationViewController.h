@@ -14,7 +14,7 @@
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *bestEffortAtLocation;
-@property (nonatomic, retain) NSString *stateString;
+@property (strong, nonatomic) NSString *stateString;
 @property (weak, nonatomic) IBOutlet UITextField *latTextfield;
 @property (weak, nonatomic) IBOutlet UITextField *lonTextfield;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
