@@ -27,6 +27,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    oakMapperUser = [OakMapperUser sharedOakMapperUser];
+    
+    // If not logged in, hide "My account" button -- Need to create and use a singleton class
+    if ([oakMapperUser loggedIn]) {
+        _accountBarButton.enabled = YES;
+        _loginBarButton.title = @"Logout";
+    } else {
+        _accountBarButton.enabled = NO;
+        _loginBarButton.title = @"Login/Signup";
+    }
+    
+    // Else, hide the "Login/Signup" button
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,6 +8,7 @@
 
 #import "OakMapperSearchViewController.h"
 #import "OakMapperDetailViewController.h"
+#import "OakMapperMapTypeViewController.h"
 #import "MBProgressHUD.h"
 #import "ASIHTTPRequest.h"
 #import "OakMapperSODPlacemark.h"
@@ -227,20 +228,6 @@
 	}
 }
 
-
-#pragma mark UISegmentedControl IBAction method
-- (IBAction)switchMapType:(id)sender {
-	int maptype = [_segmentMapType selectedSegmentIndex];
-    
-	if(maptype==0){
-		_mapView.mapType=MKMapTypeStandard;
-	} else if (maptype==1){
-		_mapView.mapType=MKMapTypeSatellite;
-	} else if (maptype==2){
-		_mapView.mapType=MKMapTypeHybrid;
-	}
-}
-
 #pragma mark MKMapView delegate methods
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>) annotation{
     UIButton *detailButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
@@ -261,16 +248,22 @@
 }
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-    [self performSegueWithIdentifier:@"showSODSearchDetail" sender:(OakMapperSODPlacemark *)[view annotation]];
+    [self performSegueWithIdentifier:@"showSODDetail" sender:(OakMapperSODPlacemark *)[view annotation]];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-	if ([segue.identifier isEqualToString:@"showSODSearchDetail"]){
+	if ([segue.identifier isEqualToString:@"showSODDetail"]){
         OakMapperDetailViewController *detailViewController = (OakMapperDetailViewController *)[segue destinationViewController];
         
         // Pass placemark to the destination view controller
         detailViewController.sodPlacemark = sender;
+    }
+
+    if ([segue.identifier isEqualToString:@"changeMapTypeSegue"]) {
+        OakMapperMapTypeViewController *mapTypeViewController = (OakMapperMapTypeViewController *)[segue destinationViewController];
+        mapTypeViewController.mapView = _mapView;
+        mapTypeViewController.mapType = _mapView.mapType;
     }
 }
 
