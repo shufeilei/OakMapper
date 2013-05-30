@@ -25,13 +25,16 @@
 		7006214D16FBDB3E00E62E16 /* orange-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7006214616FBDB3E00E62E16 /* orange-circle.png */; };
 		7006214E16FBDB3E00E62E16 /* red-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7006214716FBDB3E00E62E16 /* red-circle.png */; };
 		7006215016FBDD3E00E62E16 /* acorn_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7006214F16FBDD3E00E62E16 /* acorn_icon.png */; };
+		700FA3FC1757273600621CD5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 700FA3FB1757273600621CD5 /* README.md */; };
 		70216A0516FED17400A14552 /* NoPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 70216A0416FED17400A14552 /* NoPhoto.png */; };
 		70216A0B16FEF2E000A14552 /* OakMapperSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70216A0A16FEF2E000A14552 /* OakMapperSearchViewController.m */; };
+		703ADC041706D58B006CA024 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 703ADC031706D58B006CA024 /* grid.png */; };
 		703FE95516FC350300E4C688 /* OakMapperHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703FE95416FC350300E4C688 /* OakMapperHomeViewController.m */; };
 		7044672716FD4E6C00CD812B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7044672616FD4E6C00CD812B /* MBProgressHUD.m */; };
 		7044672C16FD60E000CD812B /* browse_tab_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7044672B16FD60E000CD812B /* browse_tab_icon.png */; };
 		7044672E16FD617400CD812B /* submit_tab_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7044672D16FD617400CD812B /* submit_tab_icon.png */; };
-		7096022917041419006C0A82 /* OakMapperMapTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7096022817041419006C0A82 /* OakMapperMapTypeViewController.m */; };
+		708A2E891710130C0059501F /* 193-location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 708A2E881710130C0059501F /* 193-location-arrow.png */; };
+		708A2E8B171013A90059501F /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 708A2E8A171013A90059501F /* 19-gear.png */; };
 		7096022D1704B096006C0A82 /* mobile-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 7096022C1704B096006C0A82 /* mobile-banner.png */; };
 		709602311704C7D1006C0A82 /* OakMapperUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 709602301704C7D1006C0A82 /* OakMapperUser.m */; };
 		709602371704CE23006C0A82 /* OakMapperLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 709602361704CE23006C0A82 /* OakMapperLoginViewController.m */; };
@@ -47,10 +50,12 @@
 		70C526361700174C0096B6E1 /* frass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70C5262E1700174C0096B6E1 /* frass.jpg */; };
 		70C526371700174C0096B6E1 /* hypoxylon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70C5262F1700174C0096B6E1 /* hypoxylon.jpg */; };
 		70C526381700174C0096B6E1 /* shootdieback.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70C526301700174C0096B6E1 /* shootdieback.jpg */; };
+		70C8D1F3172A664A0038B1B4 /* OakMapperSearchSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C8D1F2172A664A0038B1B4 /* OakMapperSearchSettingsViewController.m */; };
 		70CF4A6216FCCEC100F9D292 /* home_tab_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CF4A6116FCCEC100F9D292 /* home_tab_button.png */; };
 		70CF4A6C16FCE7E400F9D292 /* bullseye.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CF4A6B16FCE7E300F9D292 /* bullseye.png */; };
 		70CF4A6E16FCE87600F9D292 /* Location-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CF4A6D16FCE87600F9D292 /* Location-Large.png */; };
 		70CF4A7116FCEB1300F9D292 /* OakMapperSubmitLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CF4A7016FCEB1300F9D292 /* OakMapperSubmitLocationViewController.m */; };
+		70EA66CE1736128B003DA179 /* OakMapperSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA66CD1736128B003DA179 /* OakMapperSignupViewController.m */; };
 		70EC55F116FD9C3D00661297 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EC559A16FD9C3C00661297 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		70EC55F216FD9C3D00661297 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EC559D16FD9C3C00661297 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		70EC55F316FD9C3D00661297 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EC559F16FD9C3C00661297 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -93,17 +98,19 @@
 		7006214616FBDB3E00E62E16 /* orange-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange-circle.png"; sourceTree = "<group>"; };
 		7006214716FBDB3E00E62E16 /* red-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-circle.png"; sourceTree = "<group>"; };
 		7006214F16FBDD3E00E62E16 /* acorn_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = acorn_icon.png; path = ../acorn_icon.png; sourceTree = "<group>"; };
+		700FA3FB1757273600621CD5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		70216A0416FED17400A14552 /* NoPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoPhoto.png; sourceTree = "<group>"; };
 		70216A0916FEF2E000A14552 /* OakMapperSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OakMapperSearchViewController.h; sourceTree = "<group>"; };
 		70216A0A16FEF2E000A14552 /* OakMapperSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OakMapperSearchViewController.m; sourceTree = "<group>"; };
+		703ADC031706D58B006CA024 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
 		703FE95316FC350200E4C688 /* OakMapperHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OakMapperHomeViewController.h; sourceTree = "<group>"; };
 		703FE95416FC350300E4C688 /* OakMapperHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OakMapperHomeViewController.m; sourceTree = "<group>"; };
 		7044672516FD4E6C00CD812B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7044672616FD4E6C00CD812B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		7044672B16FD60E000CD812B /* browse_tab_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = browse_tab_icon.png; sourceTree = "<group>"; };
 		7044672D16FD617400CD812B /* submit_tab_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit_tab_icon.png; sourceTree = "<group>"; };
-		7096022717041419006C0A82 /* OakMapperMapTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OakMapperMapTypeViewController.h; sourceTree = "<group>"; };
-		7096022817041419006C0A82 /* OakMapperMapTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OakMapperMapTypeViewController.m; sourceTree = "<group>"; };
+		708A2E881710130C0059501F /* 193-location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "193-location-arrow.png"; sourceTree = "<group>"; };
+		708A2E8A171013A90059501F /* 19-gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-gear.png"; sourceTree = "<group>"; };
 		7096022C1704B096006C0A82 /* mobile-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-banner.png"; sourceTree = "<group>"; };
 		7096022F1704C7D0006C0A82 /* OakMapperUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OakMapperUser.h; sourceTree = "<group>"; };
 		709602301704C7D1006C0A82 /* OakMapperUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OakMapperUser.m; sourceTree = "<group>"; };
@@ -122,11 +129,15 @@
 		70C5262E1700174C0096B6E1 /* frass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frass.jpg; sourceTree = "<group>"; };
 		70C5262F1700174C0096B6E1 /* hypoxylon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hypoxylon.jpg; sourceTree = "<group>"; };
 		70C526301700174C0096B6E1 /* shootdieback.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shootdieback.jpg; sourceTree = "<group>"; };
+		70C8D1F1172A664A0038B1B4 /* OakMapperSearchSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OakMapperSearchSettingsViewController.h; sourceTree = "<group>"; };
+		70C8D1F2172A664A0038B1B4 /* OakMapperSearchSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OakMapperSearchSettingsViewController.m; sourceTree = "<group>"; };
 		70CF4A6116FCCEC100F9D292 /* home_tab_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_tab_button.png; sourceTree = "<group>"; };
 		70CF4A6B16FCE7E300F9D292 /* bullseye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullseye.png; sourceTree = "<group>"; };
 		70CF4A6D16FCE87600F9D292 /* Location-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Location-Large.png"; sourceTree = "<group>"; };
 		70CF4A6F16FCEB1300F9D292 /* OakMapperSubmitLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OakMapperSubmitLocationViewController.h; sourceTree = "<group>"; };
 		70CF4A7016FCEB1300F9D292 /* OakMapperSubmitLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OakMapperSubmitLocationViewController.m; sourceTree = "<group>"; };
+		70EA66CC1736128B003DA179 /* OakMapperSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OakMapperSignupViewController.h; sourceTree = "<group>"; };
+		70EA66CD1736128B003DA179 /* OakMapperSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OakMapperSignupViewController.m; sourceTree = "<group>"; };
 		70EC559916FD9C3C00661297 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		70EC559A16FD9C3C00661297 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		70EC559B16FD9C3C00661297 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -188,6 +199,7 @@
 		7006210B16FBD18C00E62E16 = {
 			isa = PBXGroup;
 			children = (
+				700FA3FB1757273600621CD5 /* README.md */,
 				7006211F16FBD18C00E62E16 /* OakMapper */,
 				70EC559716FD9C1B00661297 /* ASIHTTPRequest */,
 				7044672816FD4E7500CD812B /* MBProgressHUD */,
@@ -225,13 +237,11 @@
 		7006211F16FBD18C00E62E16 /* OakMapper */ = {
 			isa = PBXGroup;
 			children = (
-				709602341704C862006C0A82 /* Modal View Controllers */,
+				70EA66CB17361254003DA179 /* Users View Controllers */,
 				709602321704C811006C0A82 /* Object Classes */,
 				709602331704C820006C0A82 /* View Controllers */,
 				7006212816FBD18C00E62E16 /* OakMapperAppDelegate.h */,
 				7006212916FBD18C00E62E16 /* OakMapperAppDelegate.m */,
-				70BCC78416FF128B00641664 /* OakMapperPictureViewController.h */,
-				70BCC78516FF128B00641664 /* OakMapperPictureViewController.m */,
 				7006213916FBD41B00E62E16 /* OakMapperStoryboard.storyboard */,
 				7006213116FBD18C00E62E16 /* OakMapper.xcdatamodeld */,
 				7006212016FBD18C00E62E16 /* Supporting Files */,
@@ -242,13 +252,12 @@
 		7006212016FBD18C00E62E16 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				703ADC051706D5A0006CA024 /* Button icons */,
 				7096022E1704B0A5006C0A82 /* Images */,
 				70C52628170016FA0096B6E1 /* Symptoms */,
 				70C5261F170008BF0096B6E1 /* Species */,
-				70C5261E170008920096B6E1 /* Placemark Pin */,
-				70C5261D1700086C0096B6E1 /* Tab Bar Icons */,
-				70CF4A6D16FCE87600F9D292 /* Location-Large.png */,
-				70CF4A6B16FCE7E300F9D292 /* bullseye.png */,
+				70C5261E170008920096B6E1 /* Placemark icons */,
+				70C5261D1700086C0096B6E1 /* Tab Bar icons */,
 				7006212116FBD18C00E62E16 /* OakMapper-Info.plist */,
 				7006212216FBD18C00E62E16 /* InfoPlist.strings */,
 				7006212516FBD18C00E62E16 /* main.m */,
@@ -258,6 +267,18 @@
 				7006212F16FBD18C00E62E16 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		703ADC051706D5A0006CA024 /* Button icons */ = {
+			isa = PBXGroup;
+			children = (
+				708A2E8A171013A90059501F /* 19-gear.png */,
+				708A2E881710130C0059501F /* 193-location-arrow.png */,
+				70CF4A6D16FCE87600F9D292 /* Location-Large.png */,
+				70CF4A6B16FCE7E300F9D292 /* bullseye.png */,
+				703ADC031706D58B006CA024 /* grid.png */,
+			);
+			name = "Button icons";
 			sourceTree = "<group>";
 		};
 		7044672816FD4E7500CD812B /* MBProgressHUD */ = {
@@ -283,8 +304,6 @@
 		709602321704C811006C0A82 /* Object Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7096022F1704C7D0006C0A82 /* OakMapperUser.h */,
-				709602301704C7D1006C0A82 /* OakMapperUser.m */,
 				70EC562716FE3E8100661297 /* OakMapperSODPlacemark.h */,
 				70EC562816FE3E8100661297 /* OakMapperSODPlacemark.m */,
 			);
@@ -294,12 +313,16 @@
 		709602331704C820006C0A82 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				70BCC78416FF128B00641664 /* OakMapperPictureViewController.h */,
+				70BCC78516FF128B00641664 /* OakMapperPictureViewController.m */,
 				703FE95316FC350200E4C688 /* OakMapperHomeViewController.h */,
 				703FE95416FC350300E4C688 /* OakMapperHomeViewController.m */,
 				70EC562216FE300D00661297 /* OakMapperBrowseViewController.h */,
 				70EC562316FE300D00661297 /* OakMapperBrowseViewController.m */,
 				70216A0916FEF2E000A14552 /* OakMapperSearchViewController.h */,
 				70216A0A16FEF2E000A14552 /* OakMapperSearchViewController.m */,
+				70C8D1F1172A664A0038B1B4 /* OakMapperSearchSettingsViewController.h */,
+				70C8D1F2172A664A0038B1B4 /* OakMapperSearchSettingsViewController.m */,
 				70EC562E16FE897E00661297 /* OakMapperDetailViewController.h */,
 				70EC562F16FE897E00661297 /* OakMapperDetailViewController.m */,
 				70CF4A6F16FCEB1300F9D292 /* OakMapperSubmitLocationViewController.h */,
@@ -308,34 +331,23 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		709602341704C862006C0A82 /* Modal View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				7096022717041419006C0A82 /* OakMapperMapTypeViewController.h */,
-				7096022817041419006C0A82 /* OakMapperMapTypeViewController.m */,
-				709602351704CE23006C0A82 /* OakMapperLoginViewController.h */,
-				709602361704CE23006C0A82 /* OakMapperLoginViewController.m */,
-			);
-			name = "Modal View Controllers";
-			sourceTree = "<group>";
-		};
-		70C5261D1700086C0096B6E1 /* Tab Bar Icons */ = {
+		70C5261D1700086C0096B6E1 /* Tab Bar icons */ = {
 			isa = PBXGroup;
 			children = (
 				70CF4A6116FCCEC100F9D292 /* home_tab_button.png */,
 				7044672D16FD617400CD812B /* submit_tab_icon.png */,
 				7044672B16FD60E000CD812B /* browse_tab_icon.png */,
 			);
-			name = "Tab Bar Icons";
+			name = "Tab Bar icons";
 			sourceTree = "<group>";
 		};
-		70C5261E170008920096B6E1 /* Placemark Pin */ = {
+		70C5261E170008920096B6E1 /* Placemark icons */ = {
 			isa = PBXGroup;
 			children = (
 				7006214616FBDB3E00E62E16 /* orange-circle.png */,
 				7006214716FBDB3E00E62E16 /* red-circle.png */,
 			);
-			name = "Placemark Pin";
+			name = "Placemark icons";
 			sourceTree = "<group>";
 		};
 		70C5261F170008BF0096B6E1 /* Species */ = {
@@ -361,6 +373,19 @@
 				70C526301700174C0096B6E1 /* shootdieback.jpg */,
 			);
 			name = Symptoms;
+			sourceTree = "<group>";
+		};
+		70EA66CB17361254003DA179 /* Users View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				709602351704CE23006C0A82 /* OakMapperLoginViewController.h */,
+				709602361704CE23006C0A82 /* OakMapperLoginViewController.m */,
+				7096022F1704C7D0006C0A82 /* OakMapperUser.h */,
+				709602301704C7D1006C0A82 /* OakMapperUser.m */,
+				70EA66CC1736128B003DA179 /* OakMapperSignupViewController.h */,
+				70EA66CD1736128B003DA179 /* OakMapperSignupViewController.m */,
+			);
+			name = "Users View Controllers";
 			sourceTree = "<group>";
 		};
 		70EC559716FD9C1B00661297 /* ASIHTTPRequest */ = {
@@ -505,6 +530,10 @@
 				70C526371700174C0096B6E1 /* hypoxylon.jpg in Resources */,
 				70C526381700174C0096B6E1 /* shootdieback.jpg in Resources */,
 				7096022D1704B096006C0A82 /* mobile-banner.png in Resources */,
+				703ADC041706D58B006CA024 /* grid.png in Resources */,
+				708A2E891710130C0059501F /* 193-location-arrow.png in Resources */,
+				708A2E8B171013A90059501F /* 19-gear.png in Resources */,
+				700FA3FC1757273600621CD5 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,9 +565,10 @@
 				70EC563016FE897E00661297 /* OakMapperDetailViewController.m in Sources */,
 				70216A0B16FEF2E000A14552 /* OakMapperSearchViewController.m in Sources */,
 				70BCC78616FF128B00641664 /* OakMapperPictureViewController.m in Sources */,
-				7096022917041419006C0A82 /* OakMapperMapTypeViewController.m in Sources */,
 				709602311704C7D1006C0A82 /* OakMapperUser.m in Sources */,
 				709602371704CE23006C0A82 /* OakMapperLoginViewController.m in Sources */,
+				70C8D1F3172A664A0038B1B4 /* OakMapperSearchSettingsViewController.m in Sources */,
+				70EA66CE1736128B003DA179 /* OakMapperSignupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +625,7 @@
 				HEADER_SEARCH_PATHS = "";
 				"HEADER_SEARCH_PATHS[arch=*]" = "${SDKROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = "OakMapper/OakMapper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -640,6 +671,7 @@
 				HEADER_SEARCH_PATHS = "";
 				"HEADER_SEARCH_PATHS[arch=*]" = "${SDKROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = "OakMapper/OakMapper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
