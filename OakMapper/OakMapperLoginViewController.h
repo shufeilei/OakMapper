@@ -12,4 +12,8 @@
 
 - (IBAction)signin:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UITextField *emailTF;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTF;
+@property (weak, nonatomic) IBOutlet UILabel *loginErrorLabel;
+
 @end

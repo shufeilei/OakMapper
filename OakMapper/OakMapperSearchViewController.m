@@ -8,7 +8,7 @@
 
 #import "OakMapperSearchViewController.h"
 #import "OakMapperDetailViewController.h"
-#import "OakMapperMapTypeViewController.h"
+#import "OakMapperSearchSettingsViewController.h"
 #import "MBProgressHUD.h"
 #import "ASIHTTPRequest.h"
 #import "OakMapperSODPlacemark.h"
@@ -44,6 +44,18 @@
     // Show the map
     [self initLocation];
     // Load the first 50 points from the most recent
+}
+
+- (IBAction)changeMapType:(id)sender {
+    int maptype = [_mapTypeSegment selectedSegmentIndex];
+    
+	if(maptype==0){
+		_mapView.mapType=MKMapTypeStandard;
+	} else if (maptype==1){
+		_mapView.mapType=MKMapTypeSatellite;
+	} else if (maptype==2){
+		_mapView.mapType=MKMapTypeHybrid;
+	}
 }
 
 - (void)initLocation {
@@ -152,6 +164,11 @@
     [_mapView setDelegate:self];
     // Show the region on the map
     [_mapView setRegion:viewRegion animated:YES];
+
+    MKCircle *circle = [MKCircle circleWithCenterCoordinate:myLocation radius:1000];
+    [_mapView addOverlay:circle];
+    [_mapView setRegion:MKCoordinateRegionForMapRect(circle.boundingMapRect)];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -251,6 +268,15 @@
     [self performSegueWithIdentifier:@"showSODDetail" sender:(OakMapperSODPlacemark *)[view annotation]];
 }
 
+// Overlay properties
+- (MKOverlayView *)mapView:(MKMapView *)map viewForOverlay:(id <MKOverlay>)overlay
+{
+    MKCircleView *circleView = [[MKCircleView alloc] initWithOverlay:overlay];
+    circleView.strokeColor = [UIColor redColor];
+    circleView.fillColor = [[UIColor redColor] colorWithAlphaComponent:0.4];
+    return circleView;
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 	if ([segue.identifier isEqualToString:@"showSODDetail"]){
@@ -259,12 +285,14 @@
         // Pass placemark to the destination view controller
         detailViewController.sodPlacemark = sender;
     }
-
-    if ([segue.identifier isEqualToString:@"changeMapTypeSegue"]) {
-        OakMapperMapTypeViewController *mapTypeViewController = (OakMapperMapTypeViewController *)[segue destinationViewController];
-        mapTypeViewController.mapView = _mapView;
-        mapTypeViewController.mapType = _mapView.mapType;
+    
+    /*
+    if ([segue.identifier isEqualToString:@"searchSettings"]) {
+        OakMapperSearchSettingsViewController *searchSettingViewController = (OakMapperSearchSettingsViewController *)[segue destinationViewController];
+        
     }
+     */
+
 }
 
 - (void)addToMap:(OakMapperSODPlacemark *) placemark {

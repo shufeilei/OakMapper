@@ -13,9 +13,12 @@
 @interface OakMapperBrowseViewController : UIViewController <MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *mapTypeSegment;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
 - (IBAction)loadMoreSODPoints:(id)sender;
+
+- (IBAction)changeMapType:(id)sender;
 
 @end

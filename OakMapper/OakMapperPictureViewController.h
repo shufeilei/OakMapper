@@ -11,6 +11,9 @@
 
 @interface OakMapperPictureViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
-- (BOOL) startCameraControllerFromViewController: (UIViewController*) controller
-                                   usingDelegate: (id <UIImagePickerControllerDelegate>) delegate;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+- (IBAction)takePicture:(id)sender;
+- (IBAction)choosePicture:(id)sender;
+
 @end

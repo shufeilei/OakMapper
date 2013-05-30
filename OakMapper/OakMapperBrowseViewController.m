@@ -8,7 +8,6 @@
 
 #import "OakMapperBrowseViewController.h"
 #import "OakMapperDetailViewController.h"
-#import "OakMapperMapTypeViewController.h"
 #import "MBProgressHUD.h"
 #import "ASIHTTPRequest.h"
 #import "OakMapperSODPlacemark.h"
@@ -69,6 +68,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)changeMapType:(id)sender {
+    int maptype = [_mapTypeSegment selectedSegmentIndex];
+    
+	if(maptype==0){
+		_mapView.mapType=MKMapTypeStandard;
+	} else if (maptype==1){
+		_mapView.mapType=MKMapTypeSatellite;
+	} else if (maptype==2){
+		_mapView.mapType=MKMapTypeHybrid;
+	}
 }
 
 #pragma mark Functions responding to the action buttons
@@ -176,15 +187,11 @@
         detailViewController.sodPlacemark = sender;
     }
     
-    if ([segue.identifier isEqualToString:@"changeMapTypeSegue"]) {
-        OakMapperMapTypeViewController *mapTypeViewController = (OakMapperMapTypeViewController *)[segue destinationViewController];
-        mapTypeViewController.mapView = _mapView;
-        mapTypeViewController.mapType = _mapView.mapType;
-    }
 }
 
 - (void)addToMap:(OakMapperSODPlacemark *) placemark {
 	[_mapView addAnnotation:placemark];
 }
+
 
 @end

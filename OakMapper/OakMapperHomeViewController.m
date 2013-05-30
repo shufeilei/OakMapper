@@ -35,7 +35,7 @@
         _loginBarButton.title = @"Logout";
     } else {
         _accountBarButton.enabled = NO;
-        _loginBarButton.title = @"Login/Signup";
+        _loginBarButton.title = @"Login";
     }
     
     // Else, hide the "Login/Signup" button
